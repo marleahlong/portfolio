@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ogg-roman';
   src: url('fonts/ogg-roman.otf') format("opentype");
-  src :local (ogg-roman);
+  src :local(ogg-roman);
   font-family: 'ogg-italic';
   src: url('fonts/ogg-italic.otf') format("opentype");
-  src: local (ogg-italic);
+  src: local(ogg-italic);
 
 }
 
