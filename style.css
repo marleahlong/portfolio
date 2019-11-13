@@ -1,8 +1,8 @@
 @font-face {
-  font-family: Ogg-Roman;
-  src: ../fonts/Ogg-Roman.otf;
-  font-family: Ogg-Italic;
-  src: ../fonts/Ogg-Italic.otf;
+  font-family: "Ogg-Roman";
+  src: url("../fonts/Ogg-Roman.otf;") format("opentype");
+  font-family: "Ogg-Italic";
+  src: url("../fonts/Ogg-Italic.otf;") format("opentype");
 
 }
 
