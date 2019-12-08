@@ -6,39 +6,110 @@
 
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="flickity.css">
+    <link rel="stylesheet" href="fullscreen.css">
     <link rel="stylesheet" href="style.css">
-    </head>
+
+<!-- <style>
+a {
+    cursor: ("images/icons/cherry.svg"), default;
+  }
+</style> -->
+
     <body>
-    <!-- <div class=noop>
-
-    </div> -->
-
+  <body style=  cursor: ("images/icons/cherrycursor.svg"), default; >
     <div class="menu-wrap">
       <div class="menu">
         <div class="name"><h1>Marleah</h1></div> <br>
-          <div class="name2"><h1>Long </h1>  <img src="images/cherry.svg" style=height:15vh width:15vw;></div>
+          <div class="name2"><h1>Long </h1> &nbsp;
+       <img src="images/icons/cherry.svg" style=height:13vh width:13vw;>
+          </div>
         <div class="projects-list">
           <ul>
             <li><a href="#first">SIDE STAND</a></li>
             <li><a href="#second">SURFACE HANDMADE</a></li>
             <li><a href="#third">POSTERS</a></li>
             <li><a href="#fourth">CMD C + CMD V</a></li>
-            <li><a href="#fifth">LITTLE SIP</a></li>
-            <li><a href="#sixth">BOX GALLERY</a></li>
+            <li><a href="#fifth">DREAMSPACE</a></li>
+            <li><a href="#sixth">LITTLE SIP</a></li>
           </ul>
         </div>
       </div>
     </div>
 
      <div class="container">
-       <div class="test1" id="first"> <img src=../images/asset1.png> </div>
-       <div class="test2" id="second"><img src="images/sidestand.jpg" style=height:100vh width:100vw; ></div>
-       <div class="test3" id="third"></div>
-       <div class="test4" id="fourth"></div>
-       <div class="test5" id="fifth"></div>
-       <div class="test6" id="sixth"></div>
+       <div class="test1 panel" id="first">
+          <a href="about/index.html" id=about>  ABOUT </a>
+         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround":true, "pageDots": false, "lazyLoad": true}'>
+           <!-- <div class="carousel-cell"><img src=images/sidestand/sidestand.jpg></div> -->
+           <div class="carousel-cell"><img src=images/sidestand/ss10.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition5.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition6.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition2.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition3.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/coralcastle.gif></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss6.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss9.jpg></div>
+
+         </div>
+       </div>
+
+       <!-- <div class="test2 panel" id="second">
+       <div class="carousel"data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false }'>
+         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
+         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
+         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
+         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
+
+       </div></div> -->
+
+       <div class="test3 panel" id="third">
+         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
+         <div class="carousel-cell"><img src=images/posters/poster-min.jpg></div>
+          <div class="carousel-cell"><img src=images/posters/poster1-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster2-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster3-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster10-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster5-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster6-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster7-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster8-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster9-min.jpg></div>
+         <div class="carousel-cell"><img src=images/posters/poster4-min.jpg></div>
+
+         <!-- <div class="carousel-cell"><embed src=images/posters/poster11.pdf></div> -->
+       </div>
      </div>
 
+       <div class="test4 panel" id="fourth">
+         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false}'>
+         <div class="carousel-cell"><img src=images/cmd/cmd1.gif></div>
+         <div class="carousel-cell"><img src=images/cmd/stencil1.jpg></div>
+         <div class="carousel-cell"><img src=images/cmd/stencil2.jpg></div>
 
+        </div></div>
+
+       <div class="test5 panel" id="fifth">
+    <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
+  <div class="carousel-cell"><img src=images/dreamspace/dreamspace1.jpg></div>
+
+       </div></div>
+
+        <div class="test6 panel" id="sixth">
+         <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false  }'>
+           <div class="carousel-cell"><img src=images/littlesip/1.jpg></div>
+           <div class="carousel-cell"><img src=images/littlesip/2.jpg></div>
+           <div class="carousel-cell"><img src=images/littlesip/3.gif></div>
+           <div class="carousel-cell"><img src=images/littlesip/4.jpg></div>
+           <div class="carousel-cell"><img src=images/littlesip/5.jpg></div>
+           <div class="carousel-cell"><img src=images/littlesip/6.jpg></div>
+           <div class="carousel-cell"><img src=images/littlesip/7.jpg></div>
+           <div class="carousel-cell"><img src=images/littlesip/8.jpg></div>
+       </div>
+     </div>
+     </div>
+
+<script src="flickity.pkgd.min.js"></script>
+<script src="fullscreen.js"></script>
     </body>
 </html>

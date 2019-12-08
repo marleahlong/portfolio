@@ -1,11 +1,105 @@
-body {
-font-family: ogg;
-font-size: 10vh;
-border: 30px;
+fontface{}
 
+body {
+  /* background-color: black; */
+font-family: happytimes;
+font-size: 13vh;
+border: 30px;
+position:absolute;
+margin-left: 2%;
+margin-right: 2%;
+color:black;
+background: #CE7833;
 }
+
+ul {
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+text-decoration: underline;
+height: 6%;
+width:70%;
+margin-left: 5%;
+}
+
+li {
+text-decoration: none;
+}
+
+
+a {
+text-decoration: none;
+color:black;
+font-size: 6vh;
+/* background:#FEBDEF; */
+}
+
+a:hover {
+transform: scale(1.5);
+/* color: #FF00DB; */
+}
+
+.hover-word {
+  position:relative;
+}
+
+.hover-word img{
+  position:absolute;
+  opacity: 0;
+  transition:opacity 1s ease;
+  max-width:70%;
+  max-height: 100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.show-img img{
+  opacity:1;
+    /* transition:0s; */
+/* z-index: 5; */
+/* margin-left: -100px; */
+}
+
 
 .personallink {
 text-decoration: none;
 text-size:3vh;
+}
+.color1 {
+color: #FF5B00;
+}
+
+.color2 {
+color: #FF5B00;}
+
+.color3 {
+color: #4FFD4E;
+}
+.color4 {
+color: #DDBB5E;
+}
+.color5 {
+color: #B1D6E8;
+}
+.color6 {
+color:#EAD7F4;
+}
+
+.color7 {
+color:#EFED66;
+}
+
+
+.color {
+/* color:black; */
+letter-spacing: 2px;
+/* -webkit-text-fill-color:transparent;
+-webkit-text-stroke-width:2px; */
+}
+
+@keyframes spin {
+0% {transform:rotate(0deg);}
+100% {transform:rotate(360deg);}
+
 }
