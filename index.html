@@ -5,58 +5,149 @@
   <title>marleahlong</title>
 
     <meta charset=utf-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flickity.css">
     <link rel="stylesheet" href="fullscreen.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
 
-<!-- <style>
-a {
-    cursor: ("images/icons/cherry.svg"), default;
-  }
-</style> -->
+    $(document).ready(function(){
+
+      $("#1.btnclick").click(function (){
+          $("#dialog1").dialog ("open");  });
+
+          $(function() {
+          $("#dialog1").draggable();   });
+
+      $("#close1").click(function (){
+          $("#dialog1").dialog ("close");   });
+
+
+                    $("#3.btnclick").click(function (){
+                        $("#dialog3").dialog ("open");  });
+
+                        $(function() {
+                        $("#dialog3").draggable();   });
+
+                    $("#close3").click(function (){
+                        $("#dialog3").dialog ("close");   });
+
+
+                                    $("#4.btnclick").click(function (){
+                                        $("#dialog4").dialog ("open");  });
+
+                                        $(function() {
+                                        $("#dialog4").draggable();   });
+
+                                    $("#close4").click(function (){
+                                        $("#dialog4").dialog ("close");   });
+
+
+
+                                                  $("#5.btnclick").click(function (){
+                                                      $("#dialog5").dialog ("open");  });
+
+                                                      $(function() {
+                                                      $("#dialog5").draggable();   });
+
+                                                  $("#close5").click(function (){
+                                                      $("#dialog5").dialog ("close");   });
+
+
+
+                                                                $("#6.btnclick").click(function (){
+                                                                    $("#dialog6").dialog ("open");  });
+
+                                                                    $(function() {
+                                                                    $("#dialog6").draggable();   });
+
+                                                                $("#close6").click(function (){
+                                                                    $("#dialog6").dialog ("close");   });
+
+            $(".dialog").dialog({
+             resizeable:false,
+             autoOpen: false,
+             draggable: true
+          });
+
+
+      });
+
+   </script>
+
+</head>
 
     <body>
-  <body style=  cursor: ("images/icons/cherrycursor.svg"), default; >
-    <div class="menu-wrap">
-      <div class="menu">
-        <div class="name"><h1>Marleah</h1></div> <br>
-          <div class="name2"><h1>Long </h1> &nbsp;
-       <img src="images/icons/cherry.svg" style=height:13vh width:13vw;>
+
+      <div class="header">
+        <div class="header-link1">
+          <!-- <h1> -->
+            <span id="home">
+              <a id="hyperlinks" href="index.html"> MARLEAH LONG  </a>
+            </span>
+          <!-- </h1> -->
+        </div>
+
+        <div class="menu-wrap">
+          <div class="menu">
+            <div class="projects-list">
+              <ul>
+                <li><a href="#first">SIDE STAND</a></li>
+                <li><a href="#second">SURFACE HANDMADE</a></li>
+                <li><a href="#third">POSTERS</a></li>
+                <li><a href="#fourth">CMD C + CMD V</a></li>
+                <li><a href="#fifth">DREAMSPACE</a></li>
+                <li><a href="#sixth">LITTLE SIP</a></li>
+              </ul>
+            </div>
           </div>
-        <div class="projects-list">
-          <ul>
-            <li><a href="#first">SIDE STAND</a></li>
-            <li><a href="#second">SURFACE HANDMADE</a></li>
-            <li><a href="#third">POSTERS</a></li>
-            <li><a href="#fourth">CMD C + CMD V</a></li>
-            <li><a href="#fifth">DREAMSPACE</a></li>
-            <li><a href="#sixth">LITTLE SIP</a></li>
-          </ul>
+        </div>
+
+        <div class="header-link2">
+          <!-- <h1> -->
+            <span id="about">
+              <a id="hyperlinks" href="about/index.html">  ABOUT </a>
+           </span>
+         <!-- </h1> -->
         </div>
       </div>
-    </div>
+
+
+
 
      <div class="container">
        <div class="test1 panel" id="first">
-          <a href="about/index.html" id=about>  ABOUT </a>
-         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround":true, "pageDots": false, "lazyLoad": true}'>
+         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround":true, "pageDots": false}'>
            <!-- <div class="carousel-cell"><img src=images/sidestand/sidestand.jpg></div> -->
-           <div class="carousel-cell"><img data-flickity-lazyload=images/sidestand/ss10.jpg></div>
-           <div class="carousel-cell"><img data-flickity-lazyload=images/sidestand/exhibition5.jpg></div>
-           <div class="carousel-cell"><img data-flickity-lazyload=images/sidestand/exhibition6.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss10.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition5.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition6.min.jpg></div>
 
-           <div class="carousel-cell"><img src=images/sidestand/exhibition2.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/exhibition3.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/sidestand1.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition2.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition3.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/sidestand1.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/coralcastle.gif></div>
-           <div class="carousel-cell"><img src=images/sidestand/ss13.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss13.min.jpg></div>
 
-           <div class="carousel-cell"><img src=images/sidestand/ss6.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/ss14.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/ss9.jpg></div>
-
+           <div class="carousel-cell"><img src=images/sidestand/ss6.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss14.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss9.min.jpg></div>
          </div>
+
+         <div class=infobutton>
+           <button type="button" class="btnclick" id=1 value="INFO" onclick="getElementById('dialog1')"> INFO </button>
+           <div class=dialog id=dialog1 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, 	rgb(221, 161, 113) 100%); color: lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 10px; border-color:#FAF0E6; margin-top:0;">
+            <div class=titlebar>
+              <button type="button" class="boxbutton" id=close1 value="CLOSE" onclick="getElementById('dialog1')"> CLOSE </button>
+           </div>
+           Side Stand is exploration of the duality of home, adolescence, and femininity; where is home to an individual and what purpose does it serve when they are no longer there? Side Stand is the culmination of academic research, and a childhood spent in rural Florida. Comprised of a self made environment and two publications it allows viewers to question their own reality of home. System was completely built, designed, and implemented by artist using techniques such as risography, various binding processes, and woodworking.
+
+           </div>
+          </div>
        </div>
 
        <!-- <div class="test2 panel" id="second">
@@ -69,53 +160,105 @@ a {
        </div></div> -->
 
        <div class="test3 panel" id="third">
-         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
-         <div class="carousel-cell"><img src=images/posters/poster-min.jpg></div>
-          <div class="carousel-cell"><img src=images/posters/poster1-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster2-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster3-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster10-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster5-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster6-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster7-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster8-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster9-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster4-min.jpg></div>
+         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false, "lazyLoad": true }'>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster-min.jpg></div>
+          <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster1-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster2-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster3-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster10-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster5-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster6-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster7-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster8-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster9-min.jpg></div>
+         <div class="carousel-cell"><img data-flickity-lazyload=images/posters/poster4-min.jpg></div>
+               </div>
 
-         <!-- <div class="carousel-cell"><embed src=images/posters/poster11.pdf></div> -->
-       </div>
+               <div class=infobutton>
+                 <button type="button" class="btnclick" id=3 value="INFO" onclick="getElementById('dialog3')"> INFO </button>
+                 <div class=dialog id=dialog3 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(218, 226, 246) 100%); color:lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding:2rem; border-style: solid; border-width: 10px; border-color:#FAF0E6; margin-top:0;">
+                  <div class=titlebar>
+                    <button type="button" class="boxbutton" id=close3 value="CLOSE" onclick="getElementById ('dialog3')"> CLOSE</button>
+                 </div>
+              Various commissioned and self initiated posters made for VCUarts, Richmond Reproductive Freedom Project, and Richmond based dj duo Movement. Posters made by various print methods.
+
+                 </div>
+                </div>
+
      </div>
 
        <div class="test4 panel" id="fourth">
-         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false}'>
-         <div class="carousel-cell"><img src=images/cmd/cmd1.gif></div>
-         <div class="carousel-cell"><img src=images/cmd/stencil1.jpg></div>
-         <div class="carousel-cell"><img src=images/cmd/stencil2.jpg></div>
+           <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false, "lazyLoad": true}'>
+              <div class="carousel-cell"><img data-flickity-lazyload=images/cmd/cmd1.min.gif></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/cmd/cmd2.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/cmd/cmd3.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/cmd/stencil1.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/cmd/cmd4.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/cmd/stencil2.min.jpg></div>
 
-        </div></div>
+
+
+          </div>
+
+          <div class=infobutton>
+            <button type="button" class="btnclick" id=4 value="INFO" onclick="getElementById('dialog4')"> INFO </button>
+            <div class=dialog id=dialog4 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(179, 227, 203) 100%); color: lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 10px; border-color:#FAF0E6; margin-top:0;">
+             <div class=titlebar>
+               <button type="button" class="boxbutton" id=close4 value="CLOSE" onclick="getElementById ('dialog4')"> CLOSE </button>
+            </div>
+                Exhibition catalogue designed for VCUarts exhibition, An Excelstencil Crisis. The catalogue explores the extended process of the exhibit through the use of mostly monochrome design, repetition, and spiral binding that allows the viewer to continuously flip through the catalogue. The book was published and is available through Lulu.
+            </div>
+           </div>
+
+      </div>
 
        <div class="test5 panel" id="fifth">
-    <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
-  <div class="carousel-cell"><img src=images/dreamspace/dreamspace1.jpg></div>
+              <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false, "lazyLoad": true }'>
+                  <div class="carousel-cell"><img src=images/dreamspace/dreamspace1.jpg></div>
 
-       </div></div>
+              </div>
+
+          <div class=infobutton>
+            <button type="button" class="btnclick" id=5 value="INFO" onclick="getElementById('dialog5')"> INFO </button>
+            <div class=dialog id=dialog5 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(255, 227, 249) 100%); color:lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 10px; border-color:#FAF0E6; margin-top:0;">
+             <div class=titlebar>
+               <button type="button" class="boxbutton" id=close5 value="CLOSE" onclick="getElementById ('dialog5')"> CLOSE </button>
+            </div>
+                Collaboration with Nicole Killian, a design educator at VCUarts and new media artist. Dreamspace is a speculative future library to be held at VCU and is an ongoing project. I created a comprehensive brand identity and implemented it through the use of 2-D modeling, logotypes, and design collateral including posters and library cards.
+            </div>
+           </div>
+
+       </div>
 
         <div class="test6 panel" id="sixth">
-         <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false  }'>
+           <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false, "lazyLoad": true  }'>
            <!-- <div class="carousel-cell"><img src=images/littlesip/littlesip.png></div> -->
-           <div class="carousel-cell"><img src=images/littlesip/1.jpg></div>
-           <div class="carousel-cell"><img src=images/littlesip/2.jpg></div>
-           <div class="carousel-cell"><img src=images/littlesip/3.gif></div>
-           <div class="carousel-cell"><img src=images/littlesip/4.jpg></div>
-           <div class="carousel-cell"><img src=images/littlesip/5.jpg></div>
-           <div class="carousel-cell"><img src=images/littlesip/6.jpg></div>
-           <div class="carousel-cell"><img src=images/littlesip/7.jpg></div>
-           <div class="carousel-cell"><img src=images/littlesip/8.jpg></div>
-       </div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/1.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/2.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/3.gif></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/4.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/5.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/6.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/7.min.jpg></div>
+               <div class="carousel-cell"><img data-flickity-lazyload=images/littlesip/8.min.jpg></div>
+         </div>
+             <div class=infobutton>
+               <button type="button" class="btnclick" id=6 value="INFO" onclick="getElementById('dialog6')"> INFO </button>
+               <div class=dialog id=dialog6 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(236, 236, 160) 100%); color: lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center;  padding: 2rem; border-style: solid; border-width: 10px; border-color:#FAF0E6; margin-top:0;">
+                <div class=titlebar>
+                  <button type="button" class="boxbutton" id=close6 value="CLOSE" onclick="getElementById ('dialog6')"> CLOSE </button>
+               </div>
+                   Little Sip, an independent publishing identity, was created to support woman and non binary individuals in the community. It explores issues through the use of playful design and object making, and has been represented at two publishing fairs.
+               </div>
+              </div>
+
      </div>
      </div>
 
 <script src="flickity.pkgd.min.js"></script>
 <script src="fullscreen.js"></script>
+
+
+
     </body>
 </html>
