@@ -103,13 +103,13 @@ color:black;
 
 .header-link1 {
 display: flex;
-align-items: flex-end;
+align-items: center;
 width:100vw;
 }
 
 .header-link2 {
 display: flex;
-align-items: flex-end;
+align-items: center;
 justify-content: flex-end;
 width:100vw;
 }
@@ -178,7 +178,7 @@ margin-top: 0;
 
 .carousel-cell img {
   /* width:100%; */
-  max-height:100%;
+  height:100%;
 
 }
 
@@ -198,16 +198,27 @@ margin-top: 0;
   top:0;
 }
 
+@media screen and (max-width: 800px) {
+.panel {width: 100vw; max-height: 40vh;}
+.carousel {width:100vw; height:85%;}
+.carousel-cell  {max-width: 95%; height: 100%;}
+.carousel-cell img {max-width: 100%; max-height:100%;}
+.projects-list {display: none;}
+#hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center;}
+.btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
+.header {height:5vh;}
+.dialog {line-height: 20px !important; width: 20vw !important; height: 20vw !important; font-size: 2vh !important; padding:none !important; border-width: 5px !important;}
+.boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none;}
+.titlebar {height: 35px !important;}
+}
+
 .infobutton {
   display:flex;
-  flex-direction: row;
   justify-content: flex-start;
-  align-self: flex-end;
   width:100vw;
   z-index: 20;
   bottom:0;
-  height: 5%
-
+  height: 5%;
 }
 
 .btnclick {
