@@ -116,6 +116,10 @@ width:100vw;
 
 .header #home {
   position:relative;
+  display: inline-flex;
+  align-items: center;
+  float:left;
+  margin-right: 10px;
   left:1vw;
 }
 
@@ -136,21 +140,8 @@ right:1vw !important;
   letter-spacing: -2;
   z-index: 222222222222;
   display: flex;
-
+  padding-right: 20px;
 }
-
-/* #cherry {
-padding: 10px;
-height:5vh;
-width:10vw;
-border-radius: 8px;
-margin: 15px;
-padding-top: 15px;
-padding-left:30px;
-display: inline-flex;
-float:right;
-z-index: 25;
-} */
 
 .container{
   /* z-index: 1; */
@@ -207,9 +198,10 @@ margin-top: 0;
 #hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center;}
 .btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
 .header {height:5vh;}
-.dialog {line-height: 20px !important; width: 20vw !important; height: 20vw !important; font-size: 2vh !important; padding:none !important; border-width: 5px !important;}
+.dialog {line-height: 20px !important; width: 40vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 5px !important; border-radius: 5% !important;}
 .boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none;}
-.titlebar {height: 35px !important;}
+.titlebar {height: 35px !important; padding:none !important;}
+.header #home img {display:none;}
 }
 
 .infobutton {

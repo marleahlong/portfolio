@@ -162,7 +162,8 @@ font-size:6vh;
 .move{
 position: relative;
 display: inline-block;
-animation: move 50s infinite ease-in-out;
+animation: move 50s infinite ease;
+width:60vw;
 left:9%;
 color:black;
 font-size: 2vh;
@@ -185,7 +186,7 @@ text-decoration: none;
 width:auto;
 font-size: 2vh;
 color: black;
-animation: email 20s infinite ease-in-out;
+animation: email 20s infinite ;
 }
 
 .work {
@@ -243,12 +244,48 @@ transform: scale(1.1);
 
 @keyframes move {
 0% {left:50px}
-50% {left:1000px}
+50% {left:100%}
 100% {left:50px}
 }
 
-@keyframes email {
-0% {left:0px}
-50% {left:35vw}
-100% {left:0px}
+
+@-webkit-keyframes email {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+.content {font-size: 8.5vh;}
+li {font-size: 3vh;}
+img {height: 120% !important;}
+.email {animation:none;}
+@keyframes move {
+0% {left:50px}
+50% {left:50%}
+100% {left:50px}
+}
+}
+
+@media screen and (max-width: 420px) {
+.move {font-size: 1.5vh; animation: none; left:35% !important; width: none !important;}
+.email {animation:email 15s infinite; padding-left: 30px !important;padding-right: 30px !important; left:0;}
+img {padding-left: 20px; padding-right: 20px;}
+@-webkit-keyframes email {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
 }
