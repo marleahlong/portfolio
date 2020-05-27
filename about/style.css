@@ -279,13 +279,13 @@ img {height: 120% !important;}
 img {padding-left: 20px; padding-right: 20px;}
 @-webkit-keyframes email {
   0% {
-    -webkit-transform: translateX(0);
+    -webkit-transform: translateX(0%);
   }
   50% {
     -webkit-transform: translateX(70%);
   }
   100% {
-    -webkit-transform: translateX(0);
+    -webkit-transform: translateX(0%);
   }
 }
 }

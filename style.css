@@ -121,6 +121,7 @@ width:100vw;
   float:left;
   margin-right: 10px;
   left:1vw;
+  padding-right: 20px;
 }
 
 .header #about {
@@ -140,7 +141,7 @@ right:1vw !important;
   letter-spacing: -2;
   z-index: 222222222222;
   display: flex;
-  padding-right: 20px;
+
 }
 
 .container{
@@ -205,7 +206,7 @@ margin-top: 0;
 .header #home img {display:none;}
 .flickity-prev-next-button {display:none !important;}
 .ui-dialog  {width:0 !important;}
-.ui-widget-content {background-color: none !important; border:none !important;}
+.ui-widget-content {background-color: none !important;}
 .ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable .ui-resizable {text-decoration:none !important; width:auto !important; }
 
 }
