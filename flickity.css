@@ -76,14 +76,15 @@ https://flickity.metafizzy.co
 
 .flickity-button-icon {
   padding:0;
-  fill: black;
+  fill: pink;
+  opacity: 100%;
   right:0;
 }
 
 .flickity-prev-next-button {
   top: 50%;
-  width: 44px;
-  height: 44px;
+  width: 500px;
+  height: 80vh;
   /* vertically center */
   transform: translateY(-50%);
 }
@@ -94,6 +95,7 @@ https://flickity.metafizzy.co
 .flickity-rtl .flickity-prev-next-button.previous {
   left: 0;
   right: 0;
+
 }
 .flickity-rtl .flickity-prev-next-button.next {
   padding:none;

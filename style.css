@@ -1,7 +1,7 @@
 @font-face {
-  font-family:'happytimes';
-  src: url('fonts/happy-times-NG_bold_master.otf') format("opentype");
-  font-style: bold;
+  font-family: 'format';
+  src: url('fonts/Format_1452.otf') format("opentype");
+  font-style: normal;
 }
 
 html {
@@ -73,6 +73,7 @@ color:black;
 }
 
 .menu {
+  font-family: sans-serif;
   /* font-family: Ogg-Italic; */
   /* text-decoration: none; */
   width:100%;
@@ -191,28 +192,6 @@ margin-top: 0;
   top:0;
 }
 
-@media screen and (max-width: 800px) {
-.panel {width: 100vw; max-height: 40vh;}
-.carousel {width:100vw; height:85%;}
-.carousel-cell  {max-width: 95% ; min-width:150px; height: 100%;}
-.carousel-cell img { max-height:100%;}
-.projects-list {display: none;}
-#hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center; padding-right:none !important;}
-.btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
-.header {height:5vh;}
-.dialog {line-height: 20px !important; width: 40vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 5px !important; border-radius: 5% !important;}
-.boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none;}
-.titlebar {height: 35px !important; padding:none !important;}
-.header #home img {display:none;}
-.flickity-prev-next-button {display:none !important;}
-.ui-dialog  {width:0 !important;}
-.ui-widget-content {background-color: none !important;}
-.ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable .ui-resizable {text-decoration:none !important; width:auto !important; }
-
-}
-
-
-
 .infobutton {
   display:flex;
   justify-content: flex-start;
@@ -235,6 +214,7 @@ margin-top: 0;
 
 .dialog {
 width: 25vw !important;
+max-width: 30vw !important;
 max-height: 42vh !important;
 line-height:70px;
 border-color: lime;
@@ -246,6 +226,8 @@ border-color: lime;
   display:flex;
   margin-bottom: none;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
   background-color: white;
   color:grey;
@@ -305,14 +287,51 @@ x:0;
 
 .flickity-prev-next-button {
   color:lime !important;
-  width: 20%;
-  height: 20%;
+  width: 15%;
+  height: 90%;
   margin: 0;
   padding:0;
   background: transparent;
+  opacity: 0;
+}
 
+.flickity-prev-next-button hover {
+opacity: 1;
 }
 
 .arrow path {
 transform:none;
+}
+
+.flickity-prev-next-button.previous:hover {
+    cursor: url('leftarrow.png'), auto;
+}
+
+.flickity-prev-next-button.next:hover {
+  cursor: url('rightarrow.png'), auto;
+}
+
+
+@media screen and (max-width: 800px) {
+.panel {width: 100vw; max-height: 40vh;}
+.carousel {width:100vw; height:85%;}
+.carousel-cell  {max-width: 95% ; min-width:150px; height: 100%;}
+.carousel-cell img { max-height:100%;}
+.projects-list {display: none;}
+#hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center; padding-right:none !important;}
+.btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
+.header {height:5vh;}
+.dialog {height: 30vh !important; overflow-x: hidden !important; overflow-y: scroll !important;  line-height: 20px !important; width: 100vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 5px !important; border-radius: 5% !important;}
+.boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none;}
+.titlebar {height: 35px !important; padding:none !important;}
+.header #home img {display:none;}
+.flickity-prev-next-button {display:none !important;}
+.ui-dialog  {width:0 !important;}
+/* .ui-widget-content {background-color: none !important;} */
+/* .ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable .ui-resizable {display:none } */
+.ui-draggable {draggable:true; }
+::-webkit-scrollbar {width:10px;}
+::-webkit-scrollbar-thumb {background: pink;box-shadow: inset 0 0 5px grey;border-radius: 10px;height:5px;}
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey;border-radius: 20px;}
+
 }

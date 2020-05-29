@@ -1,3 +1,9 @@
+@font-face {
+  font-family:'happytimes';
+  src: url('fonts/happy-times-NG_bold_master.otf') format("opentype");
+  font-style: bold;
+}
+
 html {
 margin:none !important;
 margin-left: 0 !important;
@@ -91,29 +97,12 @@ align-items: center;
   display:flex;
 }
 
-
-/* a:hover #backbutton {
-transform: scale(1.1);
-} */
-
-/*
-#cherry {
-padding: 10px;
-height:5vh;
-width:10vw;
-border-radius: 8px;
-padding-left:30px;
-display: inline-flex;
-float:right;
-z-index: 25;
-} */
-
 .content {
 margin-top:3vh;
 margin-right: 1%;
 margin-left: 3%;
-font-family: happytimes;
-font-size: 14vh;
+font-family: opensans;
+font-size: 15vh;
 }
 
 a:link,a:visited,a:active,a:hover{
