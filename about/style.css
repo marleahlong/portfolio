@@ -10,6 +10,7 @@ margin-left: 0 !important;
 margin-right: 0 !important;
 margin-top:0 !important;
 left:-8px;
+overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,7 @@ border:none;
 margin-left:0;
 margin-top:0;
 margin: none !important;
+overflow-x: hidden;
 }
 
 ul {
@@ -102,7 +104,7 @@ margin-top:3vh;
 margin-right: 1%;
 margin-left: 3%;
 font-family: opensans;
-font-size: 15vh;
+font-size: 14vh;
 }
 
 a:link,a:visited,a:active,a:hover{
@@ -250,7 +252,7 @@ transform: scale(1.1);
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {  
 .content {font-size: 8.5vh;}
 li {font-size: 3vh;}
 img {height: 120% !important;}
@@ -263,6 +265,7 @@ img {height: 120% !important;}
 }
 
 @media screen and (max-width: 420px) {
+.header {height:5vh;}
 .move {font-size: 1.5vh; animation: none; left:35% !important; width: none !important;}
 .email {animation:email 15s infinite; padding-left: 30px !important;padding-right: 30px !important; left:0;}
 img {padding-left: 20px; padding-right: 20px;}
