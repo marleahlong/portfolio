@@ -250,7 +250,7 @@ transform: scale(1.1);
 @media screen and (max-width: 800px) {
 .content {font-size: 8.5vh; font-family: sans-serif;}
 #backbutton { font-size: 5vw;}
-li {font-size: 3vh;}
+li {font-size: 3vh; font-family: sans-serif !important;}
 img {height: 120% !important;}
 .email {animation:none;}
 @keyframes move {
@@ -262,7 +262,7 @@ img {height: 120% !important;}
 
 @media screen and (max-width: 420px) {
 .header {height:5vh;}
-.move {font-size: 1.5vh; animation: none; left:55% !important; right:0; width: none !important;}
+.move {font-size: 1.5vh; animation: none; left:53% !important; right:0; width: none !important;}
 .email {animation:email 15s infinite; padding-left: 30px !important;padding-right: 30px !important; left:0;}
 img {padding-left: 20px; padding-right: 20px;}
 @-webkit-keyframes email {

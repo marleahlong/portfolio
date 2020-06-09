@@ -312,6 +312,7 @@ transform:none;
 }
 
 
+
 @media screen and (max-width: 800px) {
 .panel {width: 100vw; max-height: 40vh;}
 .carousel {width:100vw; height:85%;}
@@ -319,14 +320,14 @@ transform:none;
 .carousel-cell img { max-height:100%;}
 .projects-list {display: none;}
 #hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center; padding-right:none !important;}
-.btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
+.btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: .5vh !important; top:0 !important;}
 .header {height:5vh;}
 .dialog {height: 30vh !important; overflow-x: hidden !important; overflow-y: auto !important; -webkit-overflow-scrolling:touch; line-height: 20px !important; width: 100vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 5px !important; border-radius: 5% !important;}
-.boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none; font-size: 1vh;}
+.boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none; font-size: 1vh !important;}
 .titlebar {height: 35px !important; padding:none !important;}
 .header #home img {display:none;}
 .flickity-prev-next-button {display:none !important;}
-.ui-dialog  {width:0 !important;}
+.ui-widget-content {data-role:none; font-size:none !important; width:0; background-color:none !important; }
 /* .ui-widget-content {background-color: none !important;} */
 /* .ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable .ui-resizable {display:none } */
 .ui-draggable {draggable:default;}
