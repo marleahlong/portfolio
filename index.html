@@ -27,6 +27,15 @@
       $("#close1").click(function (){
           $("#dialog1").dialog ("close");   });
 
+          $("#2.btnclick").click(function (){
+              $("#dialog2").dialog ("open");  });
+
+              $(function() {
+              $("#dialog2").draggable();   });
+
+          $("#close2").click(function (){
+              $("#dialog2").dialog ("close");   });
+
 
                     $("#3.btnclick").click(function (){
                         $("#dialog3").dialog ("open");  });
@@ -159,14 +168,23 @@
           </div>
        </div>
 
-       <!-- <div class="test2 panel" id="second">
+       <div class="test2 panel" id="second">
        <div class="carousel"data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false }'>
-         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
-         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
-         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
-         <div class="carousel-cell"><img src=images/sidestand/XXX.jpg></div>
+         <div class="carousel-cell"><img src=images/surfacehandmade/surfacehandmade.jpg></div>
+      </div>
 
-       </div></div> -->
+      <div class=infobutton>
+        <button type="button" class="btnclick" id=2 value="INFO" onclick="getElementById('dialog2')"> INFO </button>
+        <div class=dialog id=dialog2 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(218, 226, 246) 100%); color:lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding:2rem; border-style: solid; border-width: 10px; border-color:#FAF0E6; margin-top:0;">
+         <div class=titlebar>
+           <button type="button" class="boxbutton" id=close2 value="CLOSE" onclick="getElementById ('dialog2')"> CLOSE</button>
+        </div>
+        Website update for local jewelers, Surface Handmade, emphasizing the playful and one of a kind quality of their brand.
+
+        </div>
+       </div>
+
+     </div>
 
        <div class="test3 panel" id="third">
          <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
