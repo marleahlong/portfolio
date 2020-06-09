@@ -332,7 +332,7 @@ transform:none;
 /* .ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable .ui-resizable {display:none } */
 .ui-draggable {draggable:default;}
 ::-webkit-overflow-scrolling{ overflow: touch; overflow-y: auto;}
-::-webkit-scrollbar {width:10px !important; }
+::-webkit-scrollbar {width:10px !important;position:fixed; }
 ::-webkit-scrollbar-thumb {background: pink;box-shadow: inset 0 0 5px grey;border-radius: 10px;height:5px;}
 ::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey;border-radius: 20px;}
 }
