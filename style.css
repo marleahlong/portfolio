@@ -248,9 +248,10 @@ display: none;
 
 .titlebar {
 width:120%;
-height:100px;
+height: 4vh;
 left: 0;
 top:0;
+margin-bottom: 1vh;
 display: inline-block;
 }
 
