@@ -111,7 +111,7 @@ width:100vw;
 
 .header-link2 {
 display: flex;
-align-items: flex-end;
+align-items: center;
 justify-content: flex-end;
 width:100vw;
 }
@@ -214,6 +214,7 @@ margin-top: 0;
 }
 
 .dialog {
+position: absolute;
 width: 25vw !important;
 max-width: 35vw !important;
 max-height: 42vh !important;
@@ -321,9 +322,10 @@ transform:none;
 .carousel-cell  {max-width: 95% ; min-width:150px; height: 100%;}
 .carousel-cell img { max-height:100%;}
 .projects-list {display: none;}
-#hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center; padding-right:none !important;}
-.btnclick {width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
+#hyperlinks {font-size: 5vw; bottom:3vh; display:flex; align-items: center; padding-right:none !important; font-family: sans-serif;}
+.btnclick { width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
 .header {height:5vh;}
+.infobutton {padding-top: 10px;}
 .dialog {max-height: 35vh !important; overflow-x: hidden !important; overflow-y: auto !important; -webkit-overflow-scrolling:touch; line-height: 20px !important; width: 100vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 7px !important; border-radius: 5% !important; font-family: sans-serif;}
 .boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none; font-size: 1vh !important;}
 .titlebar {height: 35px !important; padding:none !important;}
@@ -331,9 +333,15 @@ transform:none;
 .flickity-prev-next-button {display:none !important;}
 /* .ui-widget-content {background-color: none !important;} */
 /* .ui-dialog .ui-corner-all .ui-widget .ui-widget-content .ui-front .ui-draggable .ui-resizable {display:none } */
-.ui-draggable {draggable:default;}
-::-webkit-overflow-scrolling{ overflow: touch; overflow-y: auto;}
-::-webkit-scrollbar {width:12px !important; position:fixed; }
+::-webkit-overflow-scrolling{ overflow: scroll; overflow-y: auto;}
+::-webkit-scrollbar {display: block; width:12px !important; position:fixed; }
 ::-webkit-scrollbar-thumb {background: pink;box-shadow: inset 0 0 5px grey;border-radius: 10px;height:5px;}
-::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey;border-radius: 20px;}
+::-webkit-scrollbar-track {display:block !important; box-shadow: inset 0 0 5px grey;border-radius: 20px;}
+::-webkit-scrollbar:vertical {
+   width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+   height: 10px;
+}
 }
