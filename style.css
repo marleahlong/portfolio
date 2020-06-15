@@ -326,7 +326,7 @@ transform:none;
 .btnclick { width:15vw !important; height:2.5vh !important;margin-top:5px !important; font-size: 1.5vh !important; top:0 !important;}
 .header {height:5vh;}
 .infobutton {padding-top: 10px;}
-.dialog {max-height: 35vh !important; overflow-x: hidden !important; overflow-y: auto !important; -webkit-overflow-scrolling:touch; line-height: 20px !important; width: 100vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 7px !important; border-radius: 5% !important; font-family: sans-serif;}
+.dialog {z-index: 33333333333333;height: 100% !important; overflow-x: hidden !important; overflow-y: scroll !important; -webkit-overflow-scrolling:touch; line-height: 20px !important; width: 100vw !important;  font-size: 2vh !important; padding:.5rem !important; border-width: 7px !important; border-radius: 5% !important; font-family: sans-serif;}
 .boxbutton  {top:0 !important;height: 2.5vh !important; width:15vw !important; border:none; font-size: 1vh !important;}
 .titlebar {height: 35px !important; padding:none !important;}
 .header #home img {display:none;}
