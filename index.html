@@ -10,10 +10,12 @@
     <!-- <link rel="stylesheet" href="fullscreen.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="icon" type="image/png" href="cloudicon.png">
+    <link rel="icon" type="image/svg" href="images/icons/computer.svg">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="isolate.js"></script>
     <script>
 
     $(document).ready(function(){
@@ -78,6 +80,17 @@
                                                                 $("#close6").click(function (){
                                                                     $("#dialog6").dialog ("close");   });
 
+
+
+                                                                          $("#7.btnclick").click(function (){
+                                                                              $("#dialog7").dialog ("open");  });
+
+                                                                              $(function() {
+                                                                              $("#dialog7").draggable();   });
+
+                                                                          $("#close7").click(function (){
+                                                                              $("#dialog7").dialog ("close");   });
+
             $(".dialog").dialog({
              resizeable:false,
              autoOpen: false,
@@ -109,20 +122,21 @@
           <!-- </h1> -->
         </div>
 
-        <div class="menu-wrap">
+        <!-- <div class="menu-wrap">
           <div class="menu">
             <div class="projects-list">
               <ul>
-                <li><a href="#first">SIDE STAND</a></li>
-                <li><a href="#second">SURFACE HANDMADE</a></li>
-                <li><a href="#third">POSTERS</a></li>
-                <li><a href="#fourth">CMD C + CMD V</a></li>
-                <li><a href="#fifth">DREAMSPACE</a></li>
-                <li><a href="#sixth">LITTLE SIP</a></li>
+                <li><a href="#first">side stand</a></li>
+                <li><a href="#second">yardsale treasure hunt</a></li>
+                <li><a href="#third">posters</a></li>
+                <li><a href="#fourth">urban outfitters</a></li>
+                <li><a href="#fifth">dreamspace</a></li>
+                <li><a href="#sixth">little sip</a></li>
+                <li><a href="#seventh">xxx</a></li>
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="header-link2">
           <!-- <h1> -->
@@ -136,164 +150,219 @@
 
 
 
-     <div class="container">
-       <div class="test1 panel" id="first">
-         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround":true, "pageDots": false }'>
+     <div class="container-fluid">
+       <!-- <div class="row content"> -->
+         <div class="row">
+         <div class="test1 panel" id="first">
+           <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround":true, "pageDots": false  }'>
            <!-- <div class="carousel-cell"><img src=images/sidestand/sidestand.jpg></div> -->
-           <div class="carousel-cell"><img src=images/sidestand/ss10.min.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/exhibition5.min.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/exhibition6.min.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/soloscover.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos1.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos2.jpg></div>
+           <!-- <div class="carousel-cell"><img src=images/solos/solos3.jpg></div> -->
+           <div class="carousel-cell"><img src=images/solos/solos4.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos5.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos6.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos7.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos8.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos9.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos10.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos11.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos12.jpg></div>
+           <div class="carousel-cell"><img src=images/solos/solos13.jpg></div>
+           <!-- <div class="carousel-cell"><img src=images/solos/solos14.jpg></div> -->
+           <div class="carousel-cell"><img src=images/solos/solos15.jpg></div>
 
-           <div class="carousel-cell"><img src=images/sidestand/exhibition2.min.jpg></div>
-           <div class="carousel-cell"><img src=images/sidestand/exhibition3.min.jpg></div>
+         </div>
+
+         <div class=infobutton>
+           <button type="button" class="btnclick" id=1 value="INFO" onclick="getElementById('dialog1')"> info </button>
+           <div class=dialog id=dialog1 style="background-color:#FAF0E6; color: black; display:block; position:fixed; left:50%; top:50%;justify-content: center;  align-items: center;  font-size:2.4vh; z-index:11; border-radius: 80px; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 3px; border-color:black; margin-top:0;">
+            <div class=titlebar>
+              <button type="button" class="boxbutton" id=close1 value="CLOSE" onclick="getElementById('dialog1')"> close </button>
+              <div id="projectdate"> 2021 </div>
+           </div>
+           Publication design for SOLOS, a quarterly series of interpretations and re-compositions; a platform to present solo work from a new perspective with accountability to the original. I worked with the founders to create the first publication of the series and rebrand their identity.
+           </div>
+             </div>
+              </div>
+               </div>
+                <!-- </div> -->
+
+
+
+   <div class="row">
+       <div class="test2 panel" id="second">
+       <div class="carousel"data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false }'>
+       <!-- <div class="carousel-cell"><img src=images/appdesign/app.gif></div> -->
+       <!-- <div class="carousel-cell"><img src=images/appdesign/yardsaleicon.png></div> -->
+       <div class="carousel-cell"><img src=images/appdesign/app1.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app2.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app3.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app4.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app5.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app6.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app7.png></div>
+       <div class="carousel-cell"><img src=images/appdesign/app8.png></div>
+
+      </div>
+
+      <div class=infobutton>
+        <button type="button" class="btnclick" id=2 value="INFO" onclick="getElementById('dialog2')"> info </button>
+        <div class=dialog id=dialog2 style="background-color:#FAF0E6; color: black; display:block; position:fixed; left:50%; top:50%;justify-content: center;  align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 80px; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width:3px; border-color:black; margin-top:0; overflow-x:hidden;">
+         <div class=titlebar>
+           <button type="button" class="boxbutton" id=close2 value="CLOSE" onclick="getElementById ('dialog2')"> close </button>
+            <div id="projectdate"> 2021 </div>
+        </div>
+
+        App rebrand for Yardsale Treasure Hunt. The deliverables of this project included logo variations, typeface and color palette, and social media graphics.
+
+        </div>
+       </div>
+
+     </div>
+   </div>
+
+
+   <div class="row">
+       <div class="test3 panel" id="third">
+         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
 
            <div class="carousel-cell"><img src=images/sidestand/ssmain.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/coralcastle.gif></div>
-           <div class="carousel-cell"><img src=images/sidestand/ss13.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/ss5.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/ss11.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/ss14.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/ss7.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/ss9.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss10.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/ss12.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition6.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition5.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition2.min.jpg></div>
+           <div class="carousel-cell"><img src=images/sidestand/exhibition3.min.jpg></div>
            <div class="carousel-cell"><img src=images/sidestand/sidestand1.min.jpg></div>
-         </div>
 
-         <div class=infobutton>
-           <button type="button" class="btnclick" id=1 value="INFO" onclick="getElementById('dialog1')"> INFO </button>
-           <div class=dialog id=dialog1 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, 	rgb(221, 161, 113) 100%); color: lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding: 1rem; border-style: solid; border-width: 3px; border-color:#FAF0E6; margin-top:0; overflow-x:hidden;">
-            <div class=titlebar>
-              <button type="button" class="boxbutton" id=close1 value="CLOSE" onclick="getElementById('dialog1')"> CLOSE </button>
-           </div>
-           Side Stand is exploration of the duality of home, adolescence, and femininity; where is home to an individual and what purpose does it serve when they are no longer there? Side Stand is the culmination of academic research, and a childhood spent in rural Florida. Comprised of a self made environment and two publications it allows viewers to question their own reality of home. System was completely built, designed, and implemented by artist using techniques such as risography, various binding processes, and woodworking.
-
-           </div>
-          </div>
-       </div>
-
-       <div class="test2 panel" id="second">
-       <div class="carousel"data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false }'>
-         <div class="carousel-cell"><img src=images/surfacehandmade/surfacehandmade.jpg></div>
-      </div>
-
-      <div class=infobutton>
-        <button type="button" class="btnclick" id=2 value="INFO" onclick="getElementById('dialog2')"> INFO </button>
-        <div class=dialog id=dialog2 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, #FFEABB); color:lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding:1rem; border-style: solid; border-width: 3px; border-color:#FAF0E6; margin-top:0;">
-         <div class=titlebar>
-           <button type="button" class="boxbutton" id=close2 value="CLOSE" onclick="getElementById ('dialog2')"> CLOSE</button>
-        </div>
-        Website update for local jewelers, Surface Handmade, emphasizing the playful and one of a kind quality of their brand.
-
-        </div>
-       </div>
-
-     </div>
-
-       <div class="test3 panel" id="third">
-         <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false }'>
-         <div class="carousel-cell"><img src=images/posters/poster-min.jpg></div>
-          <div class="carousel-cell"><img src=images/posters/poster1-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster2-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/movement.min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster3-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/prsmcat.min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster5-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster6-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster7-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster8-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/scholarship.min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster9-min.jpg></div>
-         <div class="carousel-cell"><img src=images/posters/poster4-min.jpg></div>
                </div>
 
                <div class=infobutton>
-                 <button type="button" class="btnclick" id=3 value="INFO" onclick="getElementById('dialog3')"> INFO </button>
-                 <div class=dialog id=dialog3 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(218, 226, 246) 100%); color:lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding:1rem; border-style: solid; border-width: 3px; border-color:#FAF0E6; margin-top:0;">
+                 <button type="button" class="btnclick" id=3 value="INFO" onclick="getElementById('dialog3')"> info </button>
+                 <div class=dialog id=dialog3 style="background-color:#FAF0E6; color: black; display:block; position:fixed; left:50%; top:50%;justify-content: center;  align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 80px; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 3px; border-color:black; margin-top:0; overflow-x:hidden;">
                   <div class=titlebar>
-                    <button type="button" class="boxbutton" id=close3 value="CLOSE" onclick="getElementById ('dialog3')"> CLOSE</button>
+                    <button type="button" class="boxbutton" id=close3 value="CLOSE" onclick="getElementById ('dialog3')"> close </button>
+                     <div id="projectdate"> 2019 </div>
                  </div>
-              Various commissioned and self initiated posters made for VCUarts, Richmond Reproductive Freedom Project, and Richmond based dj duo Movement. Posters made by various print methods.
+                Side Stand is exploration of the duality of home, adolescence, and femininity. Side Stand is the culmination of academic research, and a childhood spent in rural Florida. Comprised of a self made environment and two publications it allows viewers to question their own reality of home. System was completely built, designed, and implemented using techniques such as risography, various binding processes, and woodworking.
 
                  </div>
                 </div>
 
-     </div>
+            </div>
+          </div>
 
+
+      <div class="row">
        <div class="test4 panel" id="fourth">
+              <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false, "lazyLoad": true }'>
+
+                 <div class="carousel-cell"><img src=images/fuugly/fuugly2.png></div>
+                 <div class="carousel-cell"><img src=images/fuugly/fuugly3.png></div>
+                 <div class="carousel-cell"><img src=images/fuugly/fuugly4.png></div>
+                 <!-- <div class="carousel-cell"><img src=images/fuugly/fuuglymockup.png></div>
+                 <div class="carousel-cell"><img src=images/fuugly/fuuglymockup2.png></div> -->
+                 <div class="carousel-cell"><img src=images/fuugly/fuuglybrandguide-03.jpg></div>
+                 <div class="carousel-cell"><img src=images/fuugly/fuuglybrandguide-02.jpg></div>
+                 <div class="carousel-cell"><img src=images/fuugly/fuuglybrandguide-01.jpg></div>
+                 <div class="carousel-cell"><img src=images/fuugly/fuugly1.png></div>
+
+              </div>
+
+          <div class=infobutton>
+            <button type="button" class="btnclick" id=4 value="INFO" onclick="getElementById('dialog4')"> info </button>
+          <div class=dialog id=dialog4 style="background-color:#FAF0E6; color: black; display:block; position:fixed; left:50%; top:50%;justify-content: center;  align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 80px; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 3px; border-color:black; margin-top:0; overflow-x:hidden;">
+             <div class=titlebar>
+               <button type="button" class="boxbutton" id=close4 value="CLOSE" onclick="getElementById ('dialog4')"> close </button>
+                <div id="projectdate"> 2022 </div>
+            </div>
+          Rebrand and complete overhaul of visual identity for Fuugly, a fun furniture brand based in Los Angeles that specializes in mirrors and other oddities. The rebrand included a new Shopify site as well as printed deliverables.
+            </div>
+           </div>
+         </div>
+      </div>
+
+
+     <div class="row">
+       <div class="test5 panel" id="fifth">
            <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false, "lazyLoad": true}'>
-              <div class="carousel-cell"><img src=images/cmd/cmd1.min.gif></div>
-               <div class="carousel-cell"><img src=images/cmd/cmd2.min.jpg></div>
-               <div class="carousel-cell"><img src=images/cmd/cmd3.min.jpg></div>
-               <div class="carousel-cell"><img src=images/cmd/stencil1.min.jpg></div>
-               <div class="carousel-cell"><img src=images/cmd/cmd4.min.jpg></div>
-               <div class="carousel-cell"><img src=images/cmd/stencil2.min.jpg></div>
-
-
-
+             <div class="carousel-cell"><img src=images/posters/poster-min.jpg></div>
+              <div class="carousel-cell"><img src=images/posters/poster1-min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/poster2-min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/movement.min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/poster3-min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/prsmcat.min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/poster5-min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/poster6-min.jpg></div>
+             <!-- <div class="carousel-cell"><img src=images/posters/poster7-min.jpg></div> -->
+             <!-- <div class="carousel-cell"><img src=images/posters/poster8-min.jpg></div> -->
+             <div class="carousel-cell"><img src=images/posters/poster9-min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/scholarship.min.jpg></div>
+             <div class="carousel-cell"><img src=images/posters/poster4-min.jpg></div>
           </div>
 
           <div class=infobutton>
-            <button type="button" class="btnclick" id=4 value="INFO" onclick="getElementById('dialog4')"> INFO </button>
-            <div class=dialog id=dialog4 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(179, 227, 203) 100%); color: lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding: 1rem; border-style: solid; border-width: 3px; border-color:#FAF0E6; margin-top:0;">
+            <button type="button" class="btnclick" id=5 value="INFO" onclick="getElementById('dialog5')"> info </button>
+            <div class=dialog id=dialog5 style="background-color:#FAF0E6; color: black; display:block; position:fixed; left:50%; top:50%;justify-content: center;  align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 80px; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 3px; border-color:black; margin-top:0; overflow-x:hidden;">
              <div class=titlebar>
-               <button type="button" class="boxbutton" id=close4 value="CLOSE" onclick="getElementById ('dialog4')"> CLOSE </button>
+               <button type="button" class="boxbutton" id=close5 value="CLOSE" onclick="getElementById ('dialog5')"> close </button>
+                <div id="projectdate"> 2018 - ongoing </div>
             </div>
-                Exhibition catalogue designed for VCUarts exhibition, An Excelstencil Crisis. The catalogue explores the extended process of the exhibit through the use of mostly monochrome design, repetition, and spiral binding that allows the viewer to continuously flip through the catalogue. The book was published and is available through Lulu.
+              Various commissioned posters made for VCUarts, Richmond Reproductive Freedom Project, and Richmond based dj duo Movement. Posters made by various print methods.
+
             </div>
            </div>
-
-      </div>
-
-       <div class="test5 panel" id="fifth">
-              <div class="carousel" data-flickity='{ "freeScroll":true, "wrapAround": true, "pageDots": false, "lazyLoad": true }'>
-                  <div class="carousel-cell"><img src=images/dreamspace/dreamspace1.min.jpg></div>
-                  <div class="carousel-cell"><img src=images/dreamspace/dreamspace.min.gif></div>
-
-                  <div class="carousel-cell"><img src=images/dreamspace/type.min.jpg></div>
-                  <div class="carousel-cell"><img src=images/dreamspace/dreamspace2.min.jpg></div>
-                  <div class="carousel-cell"><img src=images/dreamspace/dream2.min.jpg></div>
-              </div>
-
-          <div class=infobutton>
-            <button type="button" class="btnclick" id=5 value="INFO" onclick="getElementById('dialog5')"> INFO </button>
-            <div class=dialog id=dialog5 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(255, 227, 249) 100%); color:lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center; padding: 1rem; border-style: solid; border-width: 3px; border-color:#FAF0E6; margin-top:0;">
-             <div class=titlebar>
-               <button type="button" class="boxbutton" id=close5 value="CLOSE" onclick="getElementById ('dialog5')"> CLOSE </button>
-            </div>
-                Collaboration with Nicole Killian, a design educator at VCUarts and new media artist. Dreamspace is a speculative future library to be held at VCU and is an ongoing project. I created a comprehensive brand identity and implemented it through the use of 2-D modeling, logotypes, and design collateral including posters and library cards.
-            </div>
-           </div>
-
+         </div>
        </div>
 
+
+
+      <div class="row">
         <div class="test6 panel" id="sixth">
            <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "pageDots": false, "lazyLoad": true  }'>
-           <!-- <div class="carousel-cell"><img src=images/littlesip/littlesip.png></div> -->
-               <div class="carousel-cell"><img src=images/littlesip/1.min.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/2.min.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/3.gif></div>
-               <div class="carousel-cell"><img src=images/littlesip/4.min.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/5.min.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/6.min.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/7.min.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/8.min.jpg></div>
-                <div class="carousel-cell"><img src=images/littlesip/littlesip2.jpg></div>
-               <div class="carousel-cell"><img src=images/littlesip/dessert1.min.jpg></div>
+
+             <div class="carousel-cell"><img src=images/random/13.jpg></div>
+             <div class="carousel-cell"><img src=images/random/1.jpg></div>
+             <div class="carousel-cell"><img src=images/random/14.jpg></div>
+             <div class="carousel-cell"><img src=images/random/4.gif></div>
+             <div class="carousel-cell"><img src=images/random/6.jpg></div>
+             <div class="carousel-cell"><img src=images/random/7.jpg></div>
+             <div class="carousel-cell"><img src=images/random/uo.edit.gif></div>
+             <div class="carousel-cell"><img src=images/random/2.jpg></div>
+             <div class="carousel-cell"><img src=images/random/3.jpg></div>
+             <div class="carousel-cell"><img src=images/random/15.jpg></div>
+             <div class="carousel-cell"><img src=images/random/11.jpg></div>
+             <div class="carousel-cell"><img src=images/random/12.jpg></div>
+
          </div>
              <div class=infobutton>
-               <button type="button" class="btnclick" id=6 value="INFO" onclick="getElementById('dialog6')"> INFO </button>
-               <div class=dialog id=dialog6 style="background-color:black;background-image: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(236, 236, 160) 100%); color: lime; display:block;justify-content: center; align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 10%; overflow-wrap: break-word; text-align:center;  padding: 1rem; border-style: solid; border-width: 3px; border-color:#FAF0E6; margin-top:0;">
-                <div class=titlebar>
-                  <button type="button" class="boxbutton" id=close6 value="CLOSE" onclick="getElementById ('dialog6')"> CLOSE </button>
+               <button type="button" class="btnclick" id=6 value="INFO" onclick="getElementById('dialog6')"> info </button>
+              <div class=dialog id=dialog6 style="background-color:#FAF0E6; color: black; display:block; position:fixed; left:50%; top:50%;justify-content: center;  align-items: center; overflow:auto; font-size:2.4vh; z-index:111111111; border-radius: 80px; overflow-wrap: break-word; text-align:center; padding: 2rem; border-style: solid; border-width: 3px; border-color:black; margin-top:0; overflow-x:hidden;">
+               <div class=titlebar>
+                  <button type="button" class="boxbutton" id=close6 value="CLOSE" onclick="getElementById ('dialog6')"> close </button>
+                   <div id="projectdate"> 2018 - ongoing </div>
                </div>
-                   Little Sip, an independent publishing identity, was created to support woman and non binary individuals in the community. It explores issues through the use of playful design and object making, and has been represented at two publishing fairs.
+
+               Various projects created singularly and collaboratively by a numerous number of physical and digital processes. Includes work from Little Sip, an independent publishing identity, Urban Outfitters, Nicole Killian, John Huggins, and a long list of other artists and designers.
                </div>
               </div>
 
-     </div>
-     </div>
+        </div>
+      </div>
+    </div>  
+
 
 <script src="flickity.pkgd.min.js"></script>
 <script src="fullscreen.js"></script>
+<script src="bootstrap.js"></script>
 
 
 

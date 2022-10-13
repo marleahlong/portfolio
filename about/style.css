@@ -59,17 +59,17 @@ font-size: 6vh;
 .header {
   position: relative;
   width: 100vw;
-  height:6vh;
+  height:6.5vh;
   background-color: #FAF0E6;
-  letter-spacing: inherit;
   display:flex;
   flex-direction: row;
-  color: lime;
+  color: black;
   margin:none;
   top:0 !important;
   left:0 !important;
   right:0;
   bottom:0;
+  border-bottom: 1px solid #000;
 }
 
 .header-link {
@@ -84,12 +84,10 @@ align-items: center;
 
 #backbutton {
   top:-10px;
-  color:lime;
-  font-family: sans-serif;
-  font-size: 4vh;
-  font-weight:  normal;
-  text-decoration: underline;
-  letter-spacing: -2;
+  color: black;
+  /* font-family: sans-serif; */
+  font-size: 3.5vh;
+  /* letter-spacing: -2; */
   z-index: 222222222222;
   display:flex;
 }
@@ -99,7 +97,7 @@ margin-top:4vh;
 margin-right: 1%;
 margin-left: 3%;
 font-family: sans-serif;
-font-size: 12vh;
+font-size: 11vh;
 line-height: 120%;
 padding-top: 2vh;
 }
@@ -109,13 +107,13 @@ text-decoration:none;
 line-height: 1.6;
 }
 
-a:hover {
+/* a:hover {
 
 transform: scale(1.5);
-}
+} */
 
 #backbutton:hover {
-transform: scale(1.1);
+text-decoration: underline;
 }
 
 
@@ -190,7 +188,7 @@ z-index: 20;
 }
 
 .email:hover {
-color:lime;
+color:#B1D6E8;
 }
 
 .color1 {
@@ -201,22 +199,27 @@ color: #FEBDEF;
 color: #FF5B00;}
 
 .color3 {
-color: #4FFD4E;
+color: #b1c638;
 }
 .color4 {
-color: #DDBB5E;
-}
-.color5 {
 color: #B1D6E8;
 }
-.color6 {
-color:#EAD7F4;
+.color5 {
+color:  #a8cd33;
 }
-
-.color7 {
+.color6 {
 color:#EFED66;
 }
 
+.color7 {
+color:#bc2085;
+font-size: 11vh;
+}
+
+#underline:hover {
+/* text-decoration: underline; */
+cursor: pointer;
+}
 
 .color {
 /* color:black; */
@@ -249,12 +252,14 @@ transform: scale(1.1);
   }
 }
 
-@media screen and (max-width: 800px) {
-.content {font-size: 8.5vh; font-family: sans-serif;}
+@media screen and (max-width: 850px) {
+.content {font-size: 7.5vh; font-family: sans-serif;}
 #backbutton { font-size: 5vw;}
 li {font-size: 3vh; font-family: sans-serif !important;}
 img {height: 120% !important;}
+.color7 {font-size: 7.5vh;}
 .email {animation:none;}
+.move {font-size: 1.5vh; animation: none; left: 40%;right:0 !important;}
 @keyframes move {
 0% {left:50px}
 50% {left:50%}
@@ -264,8 +269,31 @@ img {height: 120% !important;}
 
 @media screen and (max-width: 420px) {
 .header {height:5vh;}
-.move {font-size: 1.5vh; animation: none; left:53% !important; right:0; width: none !important;}
-.email {animation:email 15s infinite; padding-left: 30px !important;padding-right: 30px !important; left:0;}
+.content {font-size: 5.5vh; font-family: sans-serif;}
+.move { animation: none; left: 30%; display: flex; align-items: flex-end;right:0 !important; width: 200px;}
+.color7 {font-size: 5.5vh;font-family: sans-serif;}
+/* .email {animation:email 15s infinite; padding-left: 30px !important;padding-right: 30px !important; left:0;} */
+img {padding-left: 20px; padding-right: 20px;}
+@-webkit-keyframes email {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+}
+
+@media screen and (max-width: 290px) {
+.header {height:5vh;}
+.body {max-height: 100% !important;}
+.content {font-size: 4.5vh; font-family: sans-serif;}
+.move {font-size: 1vh; animation: none; left: 25%; display: flex; align-items: flex-end;right:0 !important; width: 200px;}
+.color7 {font-size: 5.5vh;font-family: sans-serif;}
+/* .email {animation:email 15s infinite; padding-left: 30px !important;padding-right: 30px !important; left:0;} */
 img {padding-left: 20px; padding-right: 20px;}
 @-webkit-keyframes email {
   0% {
