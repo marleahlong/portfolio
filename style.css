@@ -45,7 +45,7 @@ align-items: center;
 a:link,a:visited,a:active,a:hover{
 text-decoration:none;
 color:#4D4C47;
-display: flex;
+/* display: flex; */
 flex-direction: row;
 justify-content:  space-between;
 align-self: center;

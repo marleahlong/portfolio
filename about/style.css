@@ -57,6 +57,7 @@ font-size: 6vh;
 }
 
 .header {
+  font-family: sans-serif !important;
   position: relative;
   width: 100vw;
   height:6.5vh;
